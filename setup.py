@@ -9,9 +9,10 @@ setup(
    description='Handy tool for condor submission',
    license="MIT",
    long_description=long_description,
+   long_description_content_type="text/markdown",
    author='Jay Chan',
    author_email='jay.chan@cern.ch',
-   url="http://www.foopackage.example/",
+   url="https://github.com/qwerasd903/condor_assistant",
    packages=['condor_assistant'],
    install_requires=[],
    scripts=[]

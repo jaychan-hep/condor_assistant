@@ -12,6 +12,8 @@ Parameters:
   JobType(string): name of the task (optional)
   JobName(string): name of the job (optional)
 ```
+and
+
 ```
 def submit(with_arguments=True)
 
