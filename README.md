@@ -2,7 +2,16 @@
 
 The condor_booklist can help you submit the condor jobs efficiently!
 
-Please look at the example.py (and example.sh).
+To install the package, do:
+```
+$ pip install --upgrade condor-assistant
+```
+
+To test the functionality do:
+
+```
+$ example.py
+```
 
 ```
 class condor_booklist(Executable = '', JobType = 'default_condor', JobName = '')

@@ -1,4 +1,12 @@
-from condor_assistant import condor_booklist
+#!/usr/bin/env python3
+
+from condor_assistant import condor_booklist, createScript
+
+# create executable
+createScript("example.sh", """#!/bin/bash
+string=$1
+echo "the string is ${string}"
+""")
 
 # setup the condor bookklist with executable, jobtype(optional) and jobname(optional)
 condor_list = condor_booklist('example.sh', 'example', 'test')
