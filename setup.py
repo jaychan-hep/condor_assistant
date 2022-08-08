@@ -5,7 +5,7 @@ with open("README.md", 'r') as f:
 
 setup(
    name='condor_assistant',
-   version='1.3',
+   version='1.4',
    description='Handy tool for condor submission',
    license="MIT",
    long_description=long_description,
@@ -15,5 +15,5 @@ setup(
    url="https://github.com/qwerasd903/condor_assistant",
    packages=['condor_assistant'],
    install_requires=[],
-   scripts=["example.py"]
+   scripts=["condor_assistant_example.py"]
 )

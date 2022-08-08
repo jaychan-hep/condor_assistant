@@ -3,13 +3,13 @@
 from condor_assistant import condor_booklist, createScript
 
 # create executable
-createScript("example.sh", """#!/bin/bash
+createScript("condor_assistant_example.sh", """#!/bin/bash
 string=$1
 echo "the string is ${string}"
 """)
 
 # setup the condor bookklist with executable, jobtype(optional) and jobname(optional)
-condor_list = condor_booklist('example.sh', 'example', 'test')
+condor_list = condor_booklist('condor_assistant_example.sh', 'example', 'test')
 
 # add an argument to the booklist
 condor_list.add_Argument('Hello World')
